@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+
+  /* 高知っぽい和風背景（和紙＋海イメージ） */
+  background-color: #ffe95c;
+  background-image:
+    repeating-radial-gradient(
+      circle at 0 0,
+      rgba(255,255,255,0.35),
+      rgba(255,255,255,0.35) 10px,
+      rgba(255,255,255,0.15) 10px,
+      rgba(255,255,255,0.15) 20px
+    ),
+    repeating-linear-gradient(
+      45deg,
+      rgba(255,255,255,0.15),
+      rgba(255,255,255,0.15) 6px,
+      rgba(255,255,255,0.05) 6px,
+      rgba(255,255,255,0.05) 12px
+    );
+}
+
+/* タイトル */
+h1 {
+  margin: 0;
+  padding: 18px 0;
+  text-align: center;
+  font-size: 50px;
+  color: black;
+  background: red;
+  text-shadow:
+    3px 3px 0 yellow,
+    6px 6px 0 orange,
+    9px 9px 6px rgba(0,0,0,0.5);
+}
+
+/* フィルター */
+#filter {
+  background: red;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+  text-shadow: 1px 1px yellow;
+}
+
+#filter label {
+  margin: 0 10px;
+}
+
+/* 地図 */
+#map {
+  width: 100vw;
+  height: calc(100vh - 140px);
+}
+
+/* ポップアップ */
+.leaflet-popup-content {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.popup-img {
+  width: 100%;
+  border-radius: 10px;
+  margin: 6px 0;
+}
+
+/* 方言表示 */
+.dialect {
+  margin-top: 6px;
+  font-weight: bold;
+  color: darkred;
+}
