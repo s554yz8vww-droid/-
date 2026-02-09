@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>高知観光マップ</title>
+
+  <!-- 丸いフォント -->
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Leaflet -->
+  <link rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>高知観光マップ</h1>
+
+  <!-- カテゴリON/OFF -->
+  <div id="filter">
+    <label><input type="checkbox" checked data-type="nature"> 自然</label>
+    <label><input type="checkbox" checked data-type="history"> 歴史</label>
+    <label><input type="checkbox" checked data-type="food"> 食</label>
+  </div>
+
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
